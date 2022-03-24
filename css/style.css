@@ -1,0 +1,168 @@
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #bcd5e9;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  padding: 20px;
+}
+
+body {
+  background: rgb(73, 206, 166);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  justify-content: center;
+  background: rgb(51 51 51 / 80%);
+  align-items: center;
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+}
+
+legend {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px 10px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.divForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+
+.button {
+  padding: 10px 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  padding: 15px 45px;
+  color: #bcd5e9;
+}
+.containerCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 40px;
+  justify-content: center;
+}
+
+.card {
+  border: 0px;
+}
+
+@media only screen and (max-width: 900px) {
+    form {
+    padding: 0px 30px;
+    height: 500px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  legend {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  legend {
+    font-size: 16px;
+  }
+
+  input {
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+    width: 200px;
+  }
+
+  .divForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    align-items: center;
+  }
+
+  form {
+    width: 300px;
+    padding: 0px 0px;
+    height: 400px;
+  }
+
+  .card {
+    width: 20rem !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .card {
+    width: 15rem !important;
+  }
+
+  form {
+    width: 250px;
+    padding: 0px 0px;
+  }
+
+  input {
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+    width: 180px;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+  }
+}
